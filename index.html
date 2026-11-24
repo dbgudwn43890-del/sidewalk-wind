@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#47443a">
+  <title>길 위의 바람</title>
+  <meta name="description" content="늦가을의 보도블록 위, 손끝에서 작은 돌개바람이 일어납니다.">
+  <link rel="stylesheet" href="scene.css">
+  <script src="wind.js" defer></script>
+  <script src="scene.js" defer></script>
+</head>
+<body>
+  <main>
+    <img class="street" src="assets/sidewalk.webp" fetchpriority="high" alt="벽돌담과 은행나무 사이로 회색 보도블록 길이 이어진다.">
+    <canvas tabindex="0" role="button" aria-label="보도에 돌개바람 일으키기" aria-describedby="controls"></canvas>
+    <span id="controls" class="sr-only">보도를 누르고 있으면 바람이 계속 불고, 누른 채 끌면 바람이 따라옵니다. 키보드에서는 Enter 또는 스페이스 키를 누르고 있는 동안 앞쪽에 바람이 붑니다.</span>
+    <p id="hint" role="status">보도블록을 누른 채 끌어 보세요</p>
+    <button id="motion" type="button" aria-label="움직임 멈추기" title="움직임 멈추기"><span class="mark" aria-hidden="true"></span></button>
+  </main>
+</body>
+</html>
